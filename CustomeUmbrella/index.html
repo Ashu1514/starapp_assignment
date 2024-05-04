@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Umbrella</title>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets//CSS/style.css">
+</head>
+<body>
+    <section class="tool">
+        <div class="umbrella">
+            <img id="umbrella_image" src="./assets/images/blue.png" alt="">
+            <img id="logo" src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="painter">
+            <h1 class="title">Custom Umbrella</h1>
+            <ul class="color-picker">
+                <li class="color active" data-color="blue"></li>
+                <li class="color" data-color="yellow"></li>
+                <li class="color" data-color="pink"></li>
+            </ul>
+            <div class="tool-instructions">
+                <h4 class="title">Customize your umbrella</h4>
+                <p class="sub-title">Upload a logo for an instant preview.</p>
+                <p class="note">.png and .jpg files only. Max filr size is 5MB.</p>
+                <div class="logo-selector-button">
+                    <label class="file-label"><img src="./assets/images/upload_icon.svg"/><p id="label_name">Upload Logo</p><img id="close-button" src="./assets/images/close.svg"/></label>
+                    <input id="logo_input" type="file" class="logo-selector" accept=".png, .jpg, .jpeg"/>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="./assets/JS/app.js"></script>
+</body>
+</html>

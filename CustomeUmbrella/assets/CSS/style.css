@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.tool{
+    display: flex;
+    height: fit-content;
+    padding: 10rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.umbrella {
+    width: 37%;
+    height: fit-content;
+    position: relative;
+}
+
+.umbrella img{
+    width: 100%;
+}
+
+.umbrella img#logo{
+    opacity: 0;
+    position: absolute;
+    right: 43%;
+    left: 43%;
+    bottom: 10%;
+    width: 5rem;
+}
+
+.painter{
+    width: 50%;
+}
+
+.painter > .title{
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: -3px;
+    
+}
+.painter .color-picker {
+    list-style: none;
+    display: flex;
+    margin: 3rem 0;
+}
+.painter .color-picker .color{
+    width: 2.3rem;
+    height: 2.3rem;
+    background: var(--bg-color);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 4px solid var(--dark-border-color);
+    border-radius: 50%;
+    margin-right: 1.2rem;
+    transition: all ease-in-out 0.2s;
+}
+
+.painter .color-picker .color:hover, .painter .color-picker .color.active{
+    border: 6px solid var(--light-border-color);
+}
+
+.painter .tool-instructions .title{
+    font-weight: 500;
+    font-size: 1.7rem;
+    letter-spacing: -1px;
+}
+.painter .tool-instructions .sub-title{
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+.painter .tool-instructions .logo-selector-button{
+    position: relative;
+    margin-top: 1rem;
+}
+.painter .tool-instructions .logo-selector {
+    width: 28rem;
+    height: 3.5rem;
+    opacity: 0;
+    position: absolute;
+}
+.painter .tool-instructions .file-label{
+    width: 30rem;
+    padding: 1.3rem 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    background-color: #00a3e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.painter .tool-instructions .file-label img:not(#close-button){
+    padding-right: 1rem;
+}
+
+.painter .tool-instructions .file-label p{
+    max-width: 25rem;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.painter .tool-instructions .file-label #close-button{
+    height: 2rem;
+    color: white;
+    opacity: 0;
+}
